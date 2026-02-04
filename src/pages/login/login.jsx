@@ -14,7 +14,7 @@ function Login() {
   return (
     <div className="loginPage">
       <div className="loginCard">
-        <h1 className="loginTitle">Welcome back</h1>
+        <h1 className="loginTitle">back</h1>
         <p className="loginSubtitle">Sign in to your account to continue</p>
 
         <form className="loginForm" onSubmit={handleSubmit}>

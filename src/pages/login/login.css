@@ -1,0 +1,145 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #1a1b26 0%, #16161e 50%, #0f0f14 100%);
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.loginTitle {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #e4e4e7;
+}
+
+.loginSubtitle {
+  margin: 0 0 2rem 0;
+  font-size: 0.9rem;
+  color: #71717a;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fieldGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a1a1aa;
+}
+
+.fieldGroup input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #e4e4e7;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.fieldGroup input::placeholder {
+  color: #52525b;
+}
+
+.fieldGroup input:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.fieldGroup input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.submitBtn {
+  margin-top: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+}
+
+.submitBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+.submitBtn:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  .loginPage {
+    background: linear-gradient(145deg, #f4f4f5 0%, #e4e4e7 50%, #d4d4d8 100%);
+  }
+
+  .loginCard {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  .loginTitle {
+    color: #18181b;
+  }
+
+  .loginSubtitle {
+    color: #52525b;
+  }
+
+  .fieldGroup label {
+    color: #3f3f46;
+  }
+
+  .fieldGroup input {
+    color: #18181b;
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fieldGroup input::placeholder {
+    color: #71717a;
+  }
+
+  .fieldGroup input:hover {
+    border-color: rgba(0, 0, 0, 0.18);
+  }
+}

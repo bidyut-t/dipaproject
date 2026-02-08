@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 
 // -------------------- Forgot Password Page --------------------
-export function ForgotPasswordPage() {
+export default function ForgotPasswordPage() {
   return (
     <Box
       sx={{
@@ -18,7 +18,6 @@ export function ForgotPasswordPage() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'radial-gradient(circle at top, #0f1b2d, #050a12)'
       }}
     >
       <Container maxWidth="xs">

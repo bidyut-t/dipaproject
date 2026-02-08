@@ -5,12 +5,12 @@ import {
   Button,
   Checkbox,
   Container,
-  Divider,
+  Divider, //-----
   FormControlLabel,
-  Link,
-  TextField,
-  Typography,
-  Paper
+  Link, //<a href
+  TextField, // <input
+  Typography, //<p
+  Paper //<p
 } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -25,14 +25,15 @@ export default function SignInPage() {
         justifyContent: 'center',
       }}
     >
-      <Container maxWidth="xs">
+      {/* xs, sm, md, lg  */}
+      <Container maxWidth="xs"> 
         <Paper
           elevation={6}
           sx={{
-            p: 4,
+            p: 4, //padding and m:1 // margin
             borderRadius: 3,
-            backgroundColor: '#0b1220',
-            color: '#fff'
+            backgroundColor: '#0b1220', // bg color
+            color: '#fff' // text color
           }}
         >
           <Typography variant="h5" fontWeight={600} gutterBottom>
